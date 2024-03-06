@@ -1,11 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>My QR_code</title>
+    <style>
+        .poppins-font{
+            font-family: "Poppins", sans-serif;
+        }
+        .madimi-font{
+            font-family: "Madimi One", sans-serif;
+        }
+    </style>
 </head>
 <body>
+    <header class="bg-[#247F4F] h-[600px]">
+        <nav>
+            <div class="navbar lg:w-[980px] mx-auto">
+                <div class="navbar">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52 poppins-font ">
+                        <li><a class="text-white">About</a></li>
+                        <li><a class="text-white">Contact</a></li>
+                        <li>
+                          <details>
+                            <summary class="text-white">Language</summary>
+                            <ul class="p-2">
+                              <li><a>English</a></li>
+                              <li><a>Bangla</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <div>
+                    <a href="" class="text-white text-xl md:text-3xl lg:text-4xl madimi-font">My QR_Code
+                         <br><span class="text-white text-xs lg:text-xl poppins-font">THE 100% FREE QR CODE GENERATOR</span>
+                    </a>
+                    
+                  </div>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 poppins-font ">
+                    <li><a class="text-white">About</a></li>
+                    <li><a class="text-white">Contact</a></li>
+                    <li>
+                      <details>
+                        <summary class="text-white">Language</summary>
+                        <ul class="p-2">
+                          <li><a>English</a></li>
+                          <li><a>Bangla</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <main class="container mx-auto">
+        <!-- F&Q -->
+        <section class="mt-16 ">
+                <div class="text-center mb-4">
+                    <h1 class="text-2xl font-semibold poppins-font">FREQUENTLY ASKED QUESTIONS</h1>
+                </div>
+                <div class=" bg-base-200 rounded-lg p-8">
+                    <!-- Q1 -->
+                    <div tabindex="0" class="collapse collapse-plus border bg-white rounded-xl ">
+                        <div class="collapse-title text-xl font-medium">
+                            What is a QR code?
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>QR code stands for Quick Response Code and is barcode type that was invented by Denso Wave in 1994. Get more information at Wikipedia.</p>
+                        </div>
+                      </div>
+                      <!-- Q2 -->
+                    <div tabindex="0" class="mt-3 collapse collapse-plus border bg-white rounded-xl ">
+                        <div class="collapse-title text-xl font-medium">
+                            My QR code is not working, what can I do?
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>There are many reasons why a QR code is not working correctly. At first check your entered data. Sometimes there are little typos in your URL that break your QR code. Some QR codes (like vCard) contain a lot of data. Try reducing the data you entered for your QR code when possible. This can make it easier for QR code scanner apps to read your code. Try to remove the logo in your QR code and check if this helps. Also make sure that there is enough contrast between the background and foreground of the QR code. The foreground should always be darker than the background. Here is an article about reasons why your QR codes are not working.</p>
+                        </div>
+                      </div>
+                      <!-- Q3 -->
+                    <div tabindex="0" class=" mt-3 collapse collapse-plus border bg-white rounded-xl ">
+                        <div class="collapse-title text-xl font-medium">
+                            Can I use the generated QR Codes for commercial purposes?
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Yes, all QR codes you created with this QR generator are free and can be used for whatever you want.</p>
+                        </div>
+                      </div>
+                </div>
+               
+        </section>
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
